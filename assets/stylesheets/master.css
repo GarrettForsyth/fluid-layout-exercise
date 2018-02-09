@@ -1,0 +1,133 @@
+.billboard {
+  height: 60vh;
+  min-height: 300px;
+}
+
+.billboard .left-col {
+  position: relative;
+  display: inline-block;
+  width: 67%;
+  height: 100%;
+  float: left;
+
+  margin-top: 10px;
+  margin-left: 0.5%;
+
+  background: linear-gradient(transparent, black), linear-gradient(135deg, #ff6d6d, transparent), url("../images/binance-panic-796x419.jpg")  no-repeat rgba(0,0,0,.25);
+  background-size: 100% 100%;
+  background-color: red;
+}
+
+.billboard .left-col .logo {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  color: white;
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.billboard .left-col .teaser {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+.billboard .right-col {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 0.5%;
+  margin-left: 0.5%;
+  width: 30%;
+  height: 100%;
+}
+
+.billboard .right-col .top {
+  position: relative;
+  height: 49%;
+  margin-bottom: 2%;
+  background: linear-gradient(transparent, black), url("../images/twitter_featured-796x398.jpg") no-repeat rgba(0,0,0,.25);
+  background-size: 100% 100%;
+}
+
+.billboard .right-col .top .teaser {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.billboard .right-col .bottom {
+  position: relative;
+  height: 49%;
+  background: linear-gradient(transparent,black), url("../images/deepmindmt-796x401.jpg") rgba(0,0,0,.25);
+  background-size: 100% 100%;
+}
+
+.billboard .right-col .bottom .teaser{
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.clear {
+  clear: both;
+}
+
+@media only screen and (max-width: 1020px) {
+  .billboard .left-col {
+    background: linear-gradient(transparent, black), url("../images/binance-panic-796x419.jpg")  no-repeat rgba(0,0,0,.25);
+  background-size: 100% 100%;
+  }
+
+  .billboard .left-col .logo {
+    display: none;
+  }
+
+  .billboard .left-col .teaser {
+    font-size: 40px;
+  }
+
+  .billboard .right-col .top .teaser {
+    font-size: 20px;
+  }
+  
+  .billboard .right-col .bottom .teaser {
+    font-size: 20px;
+  }
+  
+  body {
+    background-color: lightblue;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  .billboard .left-col,
+  .billboard .right-col,
+  .billboard .right-col .top,
+  .billboard .right-col .bottom  {
+    display: block;
+    width: 100%;
+    height: 60vh;
+    float: none;
+
+  }
+
+
+  body {
+    background-color: lightgreen;
+  }
+
+
+}
