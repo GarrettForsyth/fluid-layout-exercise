@@ -102,7 +102,6 @@ h2 {
 /* Start teaser styling */
 
 article {
-  margin-top: 10px;
   height: 500px;
 }
 
@@ -120,16 +119,11 @@ article {
 }
 
 .teaser-list {
-  height: 20%;
-  margin-top: 10px;
+  height: 25%;
   margin-left: 20px;
   font-size: 15px;
   list-style-type: disc;
   list-style-color: red;
-}
-
-.teaser-list > li {
-  margin: 10px 0;
 
 }
 
@@ -258,11 +252,6 @@ article {
   #latest-fund-container-4 {
     display: none;
   }
-
-  .tease {
-    width: 50%;
-   }
-
 }
 
 @media only screen and (max-width: 790px) {
@@ -315,10 +304,6 @@ article {
 
   #latest-fund-container-4 {
     display: none;
-  }
-
-  .tease {
-    width: 100%;
   }
 
 }
